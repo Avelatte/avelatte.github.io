@@ -10,12 +10,18 @@
     <link rel="shortcut icon" href="static/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="static/apple-touch-icon.png" />
     <link rel="manifest" href="static/site.webmanifest" />
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 </head>
 <body>
     <header>
-            <div class="typewriter">
-            <h1 class="title-text">./Aveline_Cacciatore</h1>
-        </div>
+        <h1 class="title-text" ><span id="name-title"></span></h1>
+        <script>
+            var typed = new Typed('#name-title', {
+                strings: ['./Aveline_Cacciatore'],
+                typeSpeed: 50,
+            });
+        </script>
         <ul>
             <li>//</li>
             <li><a href="#sobre" class="menu-link" draggable="false">Sobre</a></li>
@@ -31,9 +37,14 @@
     </header>
     <div id="main-content">
         <section class="sobre section" id="sobre" style="text-align: center;">
-            <div class="typewriter">
-                <h1 class="title-text">Sobre_mim.</h1>
-            </div>
+            <h1 class="title-text" ><span id="sobre-title"></span></h1>
+            <script>
+                var typed = new Typed('#sobre-title', {
+                    strings: ['Sobre_Mim.'],
+                    typeSpeed: 50,
+                    loop: false,
+                });
+            </script>
             <p>Sou uma desenvolvedora de Games e Software,
                 atualmente estudando Ciências da Computação na Universidade UNINTER.
             </p>
@@ -42,9 +53,13 @@
             </p>
         </section>
         <section class="projetos section" id="projetos">
-            <div class="typewriter">
-                <h1 class="title-text">Meus_Projetos.</h1>
-            </div>
+            <h1 class="title-text" ><span id="projetos-title"></span></h1>
+            <script>
+                var typed = new Typed('#projetos-title', {
+                    strings: ['Meus_Projetos.'],
+                    typeSpeed: 50,
+                });
+            </script>
             <div id="galeria-projeto">
                 <div class="card-projeto">
                     <a href="https://github.com/AvyTheBird/mushrooms-of-qud">
@@ -55,9 +70,13 @@
             </div>
         </section>
         <section class="curriculo section" id="curriculo">
-            <div class="typewriter">
-                <h1 class="title-text">Currículo.</h1>
-            </div>
+            <h1 class="title-text" ><span id="curriculo-title"></span></h1>
+            <script>
+                var typed = new Typed('#curriculo-title', {
+                    strings: ['Currículo.'],
+                    typeSpeed: 50,
+                });
+            </script>
             <p>WIP</p>
             <p>WIP</p>
             <p>WIP</p>
