@@ -4,7 +4,6 @@ body{
     background-color: rgb(20, 20, 20);
     color: white;
     font-family: 'Courier New', Courier, monospace;
-    max-width: 100vw; max-height: 100vh;
 }
 
 header{
@@ -13,7 +12,7 @@ header{
     align-items: center;
 }
 
-h1, p{
+.title-text{
     margin: 0;
 }
 
@@ -27,9 +26,9 @@ h1, p{
     border-right: .15em solid white; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em;
+    letter-spacing: .1em;
     animation: 
-    typing 3.5s steps(40, end),
+    typing 3s steps(40, end),
     blink-caret .75s step-end infinite;
 }
 
@@ -58,15 +57,31 @@ section:not(:target) {display: none;}
 section:target {display: flex;}
 
 #main-content{
-    height: 50vh;
-}
-
-.section{
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.section{
+    height: 100%;
+    width: 60vw;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#galeria-projeto{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.img-projeto{
+    border-radius: 8px;
+    width: 300px;
+    height: 190px;
+    object-fit: cover;
 }
 
 /* The typing effect */
