@@ -65,6 +65,10 @@ section:target {display: flex;}
     width: 100%;
 }
 
+.card-projeto{
+    max-width: 300px;
+}
+
 .img-projeto{
     border-radius: 8px;
     width: 300px;
