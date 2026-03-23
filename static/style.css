@@ -4,13 +4,6 @@
 	initial-value: #111111;
 }
 
-@property --main-bg-color{
-	syntax:"<color>";
-	inherits: false;
-	initial-value: #202020;
-}
-
-
 @property --text-color{
 	syntax:"<color>";
 	inherits: false;
@@ -25,12 +18,9 @@ body{
 }
 
 #page{
-    background-color: var(--main-bg-color);
     margin: auto;
     width: 850px;
     height: 100vh;
-    border-left: 1px solid var(--text-color);	
-    border-right: 1px solid var(--text-color);	
 }
 
 header{
