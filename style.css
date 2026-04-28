@@ -1,0 +1,83 @@
+@property --bg-color{
+	syntax:"<color>";
+	inherits: false;
+	initial-value: #111111;
+}
+
+@property --highlight-color{
+	syntax:"<color>";
+	inherits: false;
+	initial-value: #2d62ff;
+}
+
+@property --text-color{
+	syntax:"<color>";
+	inherits: false;
+	initial-value: #f3f6ff;
+}
+
+body{
+    margin: auto;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: "Source Sans 3",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+}
+
+.darken{
+    opacity: 50%;
+}
+
+h1, h2, h3{margin: 0;}
+
+/* HEADER */
+
+.header-nav-list{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.nav-list-item{
+    margin: 0px 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-list-item a{
+    text-decoration: none;
+    color: var(--text-color);
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.nav-list-item a:hover{color: var(--highlight-color); transition: 0.2s;}
+
+/* HOME */
+
+#home{
+    margin-top: 35vh;
+    display: flex;
+    justify-content: center;
+}
+
+.home-block{
+    display:flex;
+    align-items: center;
+}
+
+.home-img{
+    border-radius: 50%;
+    height: 180px;
+}
+
+.home-text-block{
+    margin-left: 50px;
+    max-width: 500px;
+}
+
+.home-title{
+    font-size: 50px;
+    color: var(--highlight-color);
+}

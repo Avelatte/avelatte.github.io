@@ -1,43 +1,60 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/style.css">
-    <title>Avelatte: Coffee Time!</title>
-    <link rel="icon" type="image/png" href="static/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="static/favicon.svg" />
-    <link rel="shortcut icon" href="static/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="static/apple-touch-icon.png" />
-    <link rel="manifest" href="static/site.webmanifest" />
-</head>
-<body>
-    <div id="page">
-        <header>
-            <ul>
-                <li><a href="#" class="menu-link" draggable="false">Início</a></li>
-                <li>//</li>
-                <li><a href="./projects.html" class="menu-link" draggable="false">Projetos</a></li>
-            </ul>
-        </header>
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<title>Aveline Cacciatore</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	</head>
 
-        <div id="main-content">
-            <section class="inicio section" id="inicio" style="text-align: center;">
-                <h1 class="title-text" >Início</h1>
-                <p>Olá! Eu sou a Aveline (mas pode me chamar de Avy)! Sou uma desenvolvedora de Jogos e Software,
-                atualmente estudando Ciências da Computação. Além
-                de me interessar muito por estudos de astrofísica (e as vezes trens).
-                </p>
-                <p>//</p>
-                <p>Apesar de ter feito este simples website apenas com HTML e CSS (e um pouquinho de JS), 
-                sou mais experiente em linguagens de Back-End e desenvolvimento como Python, Java, C, entre outras tecnologias.
-                </p>
-                <a href="https://skillicons.dev">
-                    <img src="https://skillicons.dev/icons?i=bash,py,c,cs,html,css,js,java,lua" /><br />
-                    <img src="https://skillicons.dev/icons?i=linux,godot,unity,docker,git" />
-                </a>
-            </section>
-        </div>
-    </div>
-</body>
+	<body>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  		<script>
+  			AOS.init();
+  		</script>
+
+		<header>
+			<nav class="header-nav">
+				<ul class="header-nav-list">
+					<li class="nav-list-item"><a href="#home">Início</a></li>
+					<li class="nav-list-item"><a href="#projects">Projetos</a></li>
+					<li class="nav-list-item"><a href="#about">Sobre</a></li>
+					<li class="nav-list-item"><a href="#contact">Contato</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section class="content-section" id="home">
+				<div class="home-block">
+					<img class="home-img" src="static/face.png">
+					<div class="home-text-block">
+						<h1 class="home-title">Aveline Cacciatore</h1>
+						<h3 class="home-text">Desenvolveroda de Software</h3>
+						<p class="home-text darken">Experiente em desenvolvimento de jogos, web apps com Python, e baixo nível em linguagens como C e Rust.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="content-section" id="projects">
+				<div class="project-card">
+					<img class="project-card-img" src="">
+					<div class="project-card-text">
+						<h3 class="card-title"></h3>
+						<p class="card-text"></p>
+					</div>
+				</div>
+			</section>
+
+			<section class="content-section" id="about">
+
+			</section>
+
+			<section class="content-section" id="contact">
+
+			</section>
+		</main>
+	</body>
 </html>
