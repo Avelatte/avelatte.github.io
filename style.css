@@ -4,6 +4,12 @@
 	initial-value: #111111;
 }
 
+@property --unfocus-color{
+	syntax:"<color>";
+	inherits: false;
+	initial-value: #242424;
+}
+
 @property --highlight-color{
 	syntax:"<color>";
 	inherits: false;
@@ -27,11 +33,22 @@ body{
     opacity: 50%;
 }
 
-h1, h2, h3{margin: 0;}
+h1, h2, h3, p{margin: 0;}
 
 /* HEADER */
 
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .header-nav-list{
+    margin: 0;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -45,7 +62,7 @@ h1, h2, h3{margin: 0;}
     font-weight: bold;
 }
 
-.nav-list-item a{
+a{
     text-decoration: none;
     color: var(--text-color);
     user-select: none;
@@ -54,10 +71,20 @@ h1, h2, h3{margin: 0;}
 
 .nav-list-item a:hover{color: var(--highlight-color); transition: 0.2s;}
 
+.section-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+    background: linear-gradient(to bottom, var(--bg-color) 70%, var(--highlight-color) 30%);
+    padding-right: 10px;
+}
+
 /* HOME */
 
 #home{
-    margin-top: 35vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
 }
@@ -68,8 +95,8 @@ h1, h2, h3{margin: 0;}
 }
 
 .home-img{
-    border-radius: 50%;
-    height: 180px;
+    border-radius: 50%; 
+    height: 200px;
 }
 
 .home-text-block{
@@ -80,4 +107,44 @@ h1, h2, h3{margin: 0;}
 .home-title{
     font-size: 50px;
     color: var(--highlight-color);
+}
+
+/* PROJECTS */
+
+.card-container{
+    display: inline-block;
+    margin: 50px;
+}
+
+.project-card{
+    display: flex;
+    border: 1px solid var(--unfocus-color);
+    border-radius: 15px;
+    height: 120px;
+    width: 380px;
+    overflow: hidden;
+}
+
+.project-card:hover{
+    border: 1px solid var(--highlight-color); transition: 0.2s;
+}
+
+.project-card-text{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.tag{
+    border: 1px solid var(--highlight-color);
+    color: var(--highlight-color);
+    border-radius: 20px;
+    padding: 0 5px;
+    width: fit-content;
+    margin-left: 8px;
+}
+
+.project-card-img{
+    object-fit: cover;
 }
