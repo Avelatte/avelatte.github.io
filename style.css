@@ -200,9 +200,10 @@ textarea{height: 200px; resize: none;}
 
 footer{
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
     padding: 10px;
     background-color: #000000;
-    height: 50px;
+    height: 130px;
 }
