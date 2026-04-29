@@ -9,17 +9,13 @@
 	</head>
 
 	<body>
-		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  		<script>
-  			AOS.init();
-  		</script>
 
 		<header>
 			<nav class="header-nav">
 				<ul class="header-nav-list">
 					<li class="nav-list-item"><a href="#home">Início</a></li>
-					<li class="nav-list-item"><a href="#projects">Projetos</a></li>
 					<li class="nav-list-item"><a href="#about">Sobre</a></li>
+					<li class="nav-list-item"><a href="#projects">Projetos</a></li>
 					<li class="nav-list-item"><a href="#contact">Contato</a></li>
 				</ul>
 			</nav>
@@ -30,10 +26,76 @@
 				<div class="home-block">
 					<img class="home-img" src="static/face.png">
 					<div class="home-text-block">
-						<h1 class="home-title">Aveline Cacciatore</h1>
+						<h1 class="home-title highlight">Aveline Cacciatore</h1>
 						<h3 class="home-text">Desenvolveroda de Software</h3>
 						<p class="home-text darken">Experiente em desenvolvimento de jogos, web apps com Python, e baixo nível em linguagens como C e Rust.
 						</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="content-section" id="about">
+				<div class="section-title">
+					<h1>Sobre mim</h1>
+				</div>
+				<div class="card-container">
+					<div class="card-container" style="flex-direction: column;">
+						<div class="card" style="width: 50vw;">
+							<div class="card-text" align="center">
+								<h3 class="card-title highlight">Biografia</h3>
+								<p>Sou uma desenvolvedora de Jogos e Software,
+									atualmente estudando Ciências da Computação. Além
+									de me interessar muito por estudos de astrofísica (e as vezes trens).
+								</p>
+								<p>//</p>
+								<p>Como muitas outras mulheres trans na minha área, também acabo tendo muita dificuldade
+									para encontrar novas oportunidades. Mas pessoalmente, não vejo isso como uma fraqueza.
+									E sim como um empurrão para me esforçar 10 vezes mais e ser a melhor no que eu faço.
+								</p>
+								<p>//</p>
+								<p>Apesar de ter feito este simples website apenas com HTML e CSS, 
+									sou mais experiente em linguagens de Back-End e desenvolvimento como Python, C, Rust, entre outros.
+								</p>
+							</div>
+						</div>
+						<div class="card" style="width: 50vw;">
+							<div class="card-text" align="center">
+								<h3 class="card-title highlight">Política de IA</h3>
+								<p>Sou estritamente contra o uso de IA Generativa em qualquer trabalho criativo ou que requeira algum nível de confiabilidade.
+									Por isso nunca uso IA nos meus projetos.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="card-container" style="flex-direction: column; align-items: stretch;">
+						<div class="card">
+							<div class="card-text">
+								<h3 class="card-title highlight">[Estudante]</h3>
+								<p>Graduação em Ciências da Computação</p>
+								<p class="highlight">Universidade UNINTER</p>
+							</div>
+						
+						</div>
+						<div class="card">
+							<div class="card-text">
+								<h3 class="card-title highlight">[Habilidades]</h3>
+								<p class="highlight">Linguagens favoritas:</p>
+								<p>• Python <br />
+									• C <br />
+									• Rust <br />
+									• Lua <br />
+									• Java <br />
+									• HTML/CSS <br />
+								</p>
+								<p class="highlight">Ferramentas favoritas:</p>
+								<p>• Godot <br />
+									• Postman <br />
+									• MySQL/MariaDB <br />
+									• GNU Linux <br />
+									• VsCodium <br />
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -44,9 +106,9 @@
 				</div>
 				<div class="card-container">
 					<a href="#">
-						<div class="project-card">
+						<div class="card project-card">
 							<img class="project-card-img" src="static/thumbs/mushqud.png">
-							<div class="project-card-text">
+							<div class="card-text">
 								<div style="display: flex;">
 									<h3 class="card-title">Mushrooms of Qud </h3>
 									<p class="tag">xml</p>
@@ -59,19 +121,22 @@
 				</div>
 			</section>
 
-			<section class="content-section" id="about">
-				<div class="section-title">
-					<h1>Sobre mim</h1>
-				</div>
-
-			</section>
-
 			<section class="content-section" id="contact">
 				<div class="section-title">
 					<h1>Contato</h1>
 				</div>
-
+				<p align="center">Estou sempre checando meu email!</p>
+				<form action="mailto:dev.cacciatore@gmail.com" method="GET" enctype="text/plain">
+					<input placeholder="Assunto" name="subject" type="text" /><br />
+					<textarea placeholder="Mensagem..." name="body"></textarea><br />
+					<input type="submit" value="Enviar" />
+				</form>
 			</section>
 		</main>
+
+		<footer>
+			<p align="center">© 2026 Aveline Cacciatore | Licenciado sob a GNU GPLv3.<br />
+			Made by Avy!</p>
+		</footer>
 	</body>
 </html>

@@ -37,8 +37,35 @@ body{
     font-family: "Source Sans 3",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
 }
 
-.darken{
-    opacity: 50%;
+::placeholder{font-family: "Source Sans 3",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; font-size: 14px;}
+
+.darken{opacity: 50%;}
+
+.highlight{color: var(--highlight-color);}
+
+.tag{
+    border: 1px solid var(--highlight-color);
+    color: var(--highlight-color);
+    border-radius: 20px;
+    padding: 0 5px;
+    width: fit-content;
+    margin-left: 8px;
+}
+
+.card{
+    display: flex;
+    border: 1px solid var(--unfocus-color);
+    background-color: var(--bg-color);
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 15px;
+}
+
+.card-text{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 h1, h2, h3, p{margin: 0;}
@@ -82,8 +109,10 @@ a{
 .nav-list-item a:hover{color: var(--highlight-color); transition: 0.2s;}
 
 .content-section{
-    height: 90vh;
+    min-height: 90vh;
     padding-top: 10vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 .section-title{
@@ -92,6 +121,7 @@ a{
     align-items: center;
     width: fit-content;
     margin: auto;
+    margin-bottom: 50px;
     background: linear-gradient(to bottom, rgba(0,0,0,0) 70%, var(--highlight-color) 30%);
     padding-right: 10px;
 }
@@ -99,8 +129,11 @@ a{
 /* HOME */
 
 #home{
+    height: 90vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .home-block{
@@ -120,46 +153,56 @@ a{
 
 .home-title{
     font-size: 50px;
-    color: var(--highlight-color);
 }
 
 /* PROJECTS */
 
 .card-container{
-    display: inline-block;
-    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 .project-card{
-    display: flex;
-    border: 1px solid var(--unfocus-color);
-    background-color: var(--bg-color);
-    border-radius: 15px;
     height: 120px;
-    width: 380px;
-    overflow: hidden;
+    width: 370px;
 }
 
 .project-card:hover{
     border: 1px solid var(--highlight-color); color: var(--highlight-color); transition: 0.2s;
 }
 
-.project-card-text{
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.tag{
-    border: 1px solid var(--highlight-color);
-    color: var(--highlight-color);
-    border-radius: 20px;
-    padding: 0 5px;
-    width: fit-content;
-    margin-left: 8px;
-}
-
 .project-card-img{
     object-fit: cover;
+}
+
+/* CONTACT */
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, textarea{
+    background-color: var(--unfocus-color);
+    color: var(--text-color);
+    border: 0;
+    border-radius: 10px;
+    margin: 10px;
+    width: 70%;
+}
+
+input{height: 50px;}
+textarea{height: 200px; resize: none;}
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 10px;
+    background-color: #000000;
+    height: 50px;
 }
